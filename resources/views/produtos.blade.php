@@ -4,6 +4,10 @@
 
 @section('content')
 
-    <p>Produtos</p>
+    <h1>Produtos</h1>
+
+    @if ($busca != '')
+        <p>O usuário está buscando por: {{ $busca }}</p>
+    @endif
 
 @endsection
