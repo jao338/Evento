@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="/css/style.css">
         <script src="/js/script.js"></script>
         <title>@yield('title')</title>
@@ -25,7 +26,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Criar Eventos</a>
+                            <a href="/events/create" class="nav-link">Criar evento</a>
                         </li>
 
                         <li class="nav-item">
