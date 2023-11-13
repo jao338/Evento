@@ -44,7 +44,7 @@
         @yield('content')
 
         <footer>
-            <p>Evento &copy; 2023</p>
+            <p>Página de Evento &copy; 2023</p>
         </footer>
 
     </body>
