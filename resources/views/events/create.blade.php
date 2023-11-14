@@ -13,14 +13,15 @@
         @csrf
 
         <div class="form-group">
-            <label for="image">Imagem do Evento:</label>
-            <input type="file" id="image" name="image" class="form-control-file">
-        </div>
-
-        <div class="form-group">
             <label for="title">Evento:</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
         </div>
+
+        <div class="form-group">
+            <label for="date">Data do Evento:</label>
+            <input type="date" class="form-control" id="date" name="date">
+        </div>
+
 
         <div class="form-group">
             <label for="description">Descrição:</label>
@@ -38,6 +39,11 @@
                 <option value="0">Não</option>
                 <option value="1">Sim</option>
             </select>
+        </div>
+
+        <div class="form-group">
+            <label for="image" class="w-100">Imagem do Evento:</label>
+            <input type="file" id="image" name="image" class="form-control-file">
         </div>
 
         <div class="form-group">
