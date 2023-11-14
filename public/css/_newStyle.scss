@@ -103,11 +103,11 @@ header{
   }
 
   #events-container .card{
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 8px;
     padding: 0 !important;
-    margin: 4px;
+    margin: .5%;
   }
 
   #events-container img{
@@ -162,4 +162,40 @@ header{
 
   .form-group{
     margin-bottom: 16px !important;
+  }
+
+  #image-container,
+  #info-container{
+    margin-top: 32px !important;
+  }
+
+  #image-container img{
+    border-radius: 8px;
+  }
+
+  #info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  #info-container p{
+    margin: 0 !important;
+    font-size: 16px;
+    display: flex;
+  }
+
+  #info-container h3,
+  #description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .event-city svg,
+  .event-participants svg,
+  .event-owner svg{
+    margin-right: 8px !important;
+  }
+
+  #info-container #event-submit{
+    margin: 20px 0;
   }
