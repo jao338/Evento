@@ -40,6 +40,27 @@
             </select>
         </div>
 
+        <div class="form-group">
+            <label for="title">Adicione itens de infraestrutura:</label>
+            <div class="d-flex flags">
+                <div class="form-group">	
+                    <input type="checkbox" name="items[]" value="Cadeiras"> Cadeiras
+                </div>
+                <div class="form-group">	
+                    <input type="checkbox" name="items[]" value="Palco"> Palco
+                </div>
+                <div class="form-group">	
+                    <input type="checkbox" name="items[]" value="Cerveja grátis"> Cerveja grátis
+                </div>
+                <div class="form-group">	
+                    <input type="checkbox" name="items[]" value="Open Food"> Open food
+                </div>
+                <div class="form-group">	
+                    <input type="checkbox" name="items[]" value="Brindes"> Brindes
+                </div>
+            </div>
+        </div>
+
         <input type="submit" value="Criar evento" class="btn btn-primary">
 
     </form>

@@ -107,7 +107,7 @@ header{
     max-width: 25%;
     border-radius: 8px;
     padding: 0 !important;
-    margin: .5%;
+    margin-right: .5%;
   }
 
   #events-container img{
@@ -198,4 +198,21 @@ header{
 
   #info-container #event-submit{
     margin: 20px 0;
+  }
+
+  .flags .form-group{
+    margin-right: 8px !important;
+  }
+
+  #items-list{
+    list-style: none;
+    padding-left: 0 !important;
+  }
+
+  #items-list svg{
+    margin-right: 16px !important;
+  }
+
+  #items-list li{
+    display: flex;
   }
