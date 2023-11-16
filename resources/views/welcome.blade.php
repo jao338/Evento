@@ -1,22 +1,26 @@
 @extends('layouts/main')
 
-@section('title', 'Curso de laravel 8 - Home')
+@section('title', 'Curso de laravel 8 - Dashboard')
 
 @section('content')
 
     <div id="search-container" class="col-md-12">
         <h1>Busque um evento</h1>
         
-        <form action="">
+        <form action="/" method="GET">
             <input type="text" id="search" name="search" class="form-control" placeholder="Procurar">
         </form>
 
     </div>
 
     <div class="col-md-12" id="events-container">
-        <h2>Próximos eventos</h2>
-
-        <p class="subtitle">Veja os eventos dos próximos dias</p>
+        
+        @if ($search)
+            <h2>Buscando por: {{ $search }}</h2>
+        @else
+            <h2>Próximos eventos</h2>
+            <p class="subtitle">Veja os eventos dos próximos dias</p>
+        @endif
 
         <div id="cards-container" class="row margin-L-0 margin-R-0">
             @foreach ($events as $event)
@@ -33,8 +37,10 @@
 
                 </div>
             @endforeach
-            @if (count($events) == 0)
-                <p>Não há eventos disponíveis no momento</p>
+            @if(count($events) == 0 && $search)
+                <p style="padding-left: 0!important;">Não foi possível encontrar nenhum evento com {{ $search }}! <a href="/" class="text-decoration-none">Ver todos</a></p>
+            @elseif(count($events) == 0)
+                <p>Não há eventos disponíveis</p>
             @endif
         </div>
     </div>
