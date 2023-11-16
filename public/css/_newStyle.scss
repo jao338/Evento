@@ -200,6 +200,10 @@ header{
     margin: 20px 0;
   }
 
+  #description-container{
+    margin-top: 24px !important;
+  }
+
   .flags .form-group{
     margin-right: 8px !important;
   }
@@ -215,4 +219,13 @@ header{
 
   #items-list li{
     display: flex;
+  }
+
+  .dashboard-title-container{
+    margin-bottom: 32px !important;
+    margin-top: 32px !important;
+  }
+
+  .dashboard-events-container th{
+    width: 25%;
   }

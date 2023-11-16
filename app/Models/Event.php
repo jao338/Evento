@@ -14,4 +14,10 @@ class Event extends Model
     ];
 
     protected $dates = ['date'];
+
+    public function user(){
+
+        //  Um único usuário possui vários eventos (one to many)
+        return $this->belongsTo('App\Models\User');
+    }
 }
