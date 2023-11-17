@@ -13,11 +13,20 @@ class Event extends Model
         'items' => 'array'
     ];
 
+    protected $guarded = [];
+
     protected $dates = ['date'];
 
     public function user(){
 
-        //  Um único usuário possui vários eventos (one to many)
+        //  Um único usuário é dono de um evento
         return $this->belongsTo('App\Models\User');
+    }
+
+    public function users(){
+        
+        //  Um único usuário pertence a vários eventos
+        return $this->belongsToMany('App\Models\User');
+
     }
 }

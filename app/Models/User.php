@@ -61,8 +61,15 @@ class User extends Authenticatable
 
     public function events(){
 
-        //  Um único usuário possui vários eventos (one to many)
+        //  Um único usuário pode possuir vários eventos
         return $this->hasMany(Event::class);
+
+    }
+
+    public function eventsAsParticipant(){
+        
+        //  Um usuário pode pertecer a vários eventos
+        return $this->belongsToMany(Event::class, 'event_user', 'user_id', 'event_id');
 
     }
 }
