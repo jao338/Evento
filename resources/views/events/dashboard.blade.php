@@ -31,7 +31,7 @@
                             <td>
                                 <a href="/events/{{ $event->id }}" class="text-decoration-none">{{ $event->title }}</a>
                             </td>
-                            <td>0</td>
+                            <td>{{ count($event->users) }}</td>
                             <td>
                                 <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn">
                                 
@@ -68,4 +68,15 @@
         @endif
     </div>
 
+    <div class="col-md-10 offset-md-1 dashboard-title-container">
+        <h1>Eventos que estou participando</h1>
+    </div>
+
+    <div class="col-md-10 offset-md-1 dashboard-events-container">
+
+        @foreach ($eventsasparticipant as $item)
+            {{ $item }}
+        @endforeach
+
+    </div>
 @endsection
