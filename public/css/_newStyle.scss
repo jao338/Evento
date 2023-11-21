@@ -179,7 +179,7 @@ header{
   }
 
   #info-container p{
-    margin: 0 !important;
+    margin-bottom: 0 !important;
     font-size: 16px;
     display: flex;
   }
@@ -237,4 +237,17 @@ header{
   .img-preview{
     width: 112px;
     margin-top: 24px !important;
+  }
+
+  .already-joined-msg{
+    margin-top: 16px !important;
+    color: #004085;
+    background-color: #CCE5FF;
+    border: 1px solid #B8DAFF;
+    padding: 8px;
+    width: 312px;
+  }
+  
+  #info-container h3{
+    margin-top: 16px !important;
   }
